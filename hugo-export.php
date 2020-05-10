@@ -148,7 +148,7 @@ class Hugo_Export
 
         // check if the post or page has a Featured Image assigned to it.
         if (has_post_thumbnail($post)) {
-            $output['featured_image'] = str_replace(get_site_url(), "", get_the_post_thumbnail_url($post));
+            $output['thumb_img_path'] = str_replace(get_site_url(), "", get_the_post_thumbnail_url($post));
         }
 
         //convert traditional post_meta values, hide hidden values
